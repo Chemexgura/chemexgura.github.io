@@ -1,0 +1,324 @@
+
+@font-face{
+    font-family: "Neon Glow";
+    src:url("htps://cdn.jsdelivr.net/gh/codetheworld-io/static-files/NeonGlow-8VLz.ttf")
+}
+
+body{
+    background-image: url("ptbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.bod0{
+    height: 0%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+
+    
+}
+
+    
+
+.roots_1{
+    display: flex;
+    justify-content: center;
+    gap: 31.6cm;
+    padding-top: 5cm;
+    padding-left: 20cm;
+}
+.root{
+    --blur: 1.75rem;
+    --box-blur:calc(0.5 * var(--blur));
+    --glow: var(--color, white);
+    --size: 10rem;
+    width: var(--size);
+    height: var(--size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 4px solid currentColor;
+    border-radius: 12px;
+    box-shadow: 
+        inset 0 0 0 2px #00000026,
+        0 0 0 2px #00000026,
+        inset 0 0 var(--box-blur) var(--glow),
+        0 0 var(--box-blur) var(--glow);
+    color: var(--color,white);
+    font-family: system-ui, sans-serif;
+    padding: 1rem;
+}
+
+.root>*{
+    margin: 0;
+    padding: 0;
+    
+}
+.number{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.symbol{
+    font-size: 4rem;
+    font-family: "Neon Glow";
+    text-shadow: 0 0 var(--blur) var(--glow); 
+}
+
+.h{
+    --color: #abed82;
+    filter: saturate(175%);
+}
+.he{
+    --color: #e555c7;
+    filter: brightness(125%);
+}
+
+.bod1{
+    height: 50vh;
+    margin: 0;
+    display: grid;
+    box-sizing: border-box;
+
+}
+.roots_2{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 0cm;
+    padding-left: 20cm ;
+    
+   
+}
+.li{
+    --color:#cf4141;
+    filter: saturate(200%);
+}
+.be{
+    --color:#F4A12E;
+    filter: brightness(125%);
+}
+.b{
+    --color:#FCC927;
+    filter: saturate(200%);
+}
+.c,.n,.o,.f{
+    --color:#abed82;
+    filter: saturate(175%);
+}
+.ne{
+    --color:#e555c7;
+    filter: brightness(125%);
+}
+
+.bod2{
+    height: 0;
+    margin: 0;
+    display: grid;
+    box-sizing: border-box;
+}
+.roots_3{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 0cm;
+    padding-left: 20cm;
+  
+}
+.na{
+    --color:#cf4141;
+    filter: saturate(200%);
+}
+.mg{
+    --color:#F4A12E;
+    filter: brightness(125%);
+}
+.al{
+    --color:#BE94BC;
+    filter: saturate(200%);
+}
+.si{
+    --color:#FCC927;
+    filter: saturate(200%);
+}
+.p,.s,.cl{
+    --color:#abed82;
+    filter: saturate(175%);
+}
+.ar{
+    --color:#e555c7;
+    filter: brightness(125%);
+}
+
+.bod3{
+    height: 0%;
+    margin: 0;
+    display: grid;
+    place-items: left;
+    box-sizing: border-box;
+}
+.roots_4{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 0cm;
+    padding-right: 26.3cm;
+    padding-left: 20cm;
+}
+.k{
+    --color:#cf4141;
+    filter: saturate(200%);
+}
+.ca{
+    --color:#F4A12E;
+    filter: brightness(125%);
+
+}
+  .main,.main1{
+    font-size: 21pt;
+    padding-top: 7cm;
+    height: auto;
+    width: auto;
+
+    
+  }
+  .main,.lis{
+    font-weight:bold;
+  }
+  .lis1,.lis{
+    font-size: 25pt;
+  }
+
+  .des1{
+    display: flex;
+    padding-left: 1cm;
+    padding-top: 1cm;
+    gap: 2cm;
+    width: 4.5cm;
+  }
+
+  .f1{
+    text-align: center;
+    color: #d70000;
+  }
+  .f2{
+    text-align: center;
+    color: #e9c535;
+  }
+  .f3{
+    text-align: center;
+    color: #754c75;
+  }
+  .f4{
+    text-align: center;
+    color: #ffbf00;
+  }
+  .f5{
+    text-align: center;
+    color: #7cf332;
+  }
+  .f6{
+    text-align: center;
+    color: #ff04f2;
+  }
+  
+
+.box1{
+            width: 2px; 
+            height: 2px; 
+            background-color:transparent; 
+            border: 2px rgb(#d70000 215, green, blue); 
+            padding: 20px; 
+            margin: 20px; 
+            box-shadow: 0 0 10px 5px #d70000;
+            border-radius: 10%;
+}
+.box2{
+    width: 2px; 
+    height: 2px; 
+    background-color: transparent; 
+    border: 2px #e9c535; 
+    padding: 20px; 
+    margin: 20px; 
+    box-shadow: 0 0 10px 5px #e9c535;
+    border-radius: 10%;
+}
+.box3{
+    width: 2px; 
+    height: 2px; 
+    background-color:transparent; 
+    border: 2px #754c75; 
+    padding: 20px; 
+    margin: 20px;
+    box-shadow: 0 0 10px 5px #754c75;
+    border-radius: 10%; 
+}
+.box4{
+    width: 2px; 
+    height: 2px; 
+    background-color: transparent; 
+    border: 2px #ffbf00; 
+    padding: 20px; 
+    margin: 20px; 
+    box-shadow: 0 0 10px 5px #ffbf00;
+    border-radius: 10%;
+}
+.box5{
+    width: 2px; 
+    height: 2px; 
+    background-color: transparent; 
+    border: 2px #7cf332; 
+    padding: 20px; 
+    margin: 20px; 
+    box-shadow: 0 0 10px 5px #7cf332;
+    border-radius: 10%;
+}
+
+.box6{
+    width: 2px; 
+    height: 2px; 
+    background-color: transparent; 
+    border: 2px #ff04f2; 
+    padding: 20px; 
+    margin: 20px; 
+    box-shadow: 0 0 10px 5px #ff04f2;
+    border-radius: 10%;
+}
+
+/* Style for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the overlay appears above everything else */
+}
+
+/* Style for the announcement box */
+.announcement-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Welcome{
+    text-align: center;
+    font-size: 40pt;
+}
+
+.guide{
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -1,0 +1,224 @@
+#displayBox9{
+    display: none;
+    background-color:transparent;
+    color: #e555c7;
+    margin-top: 00px;
+    position: absolute;
+    z-index: 2;
+    width: 600px; /* Set the width of the box */
+    height: 800px; /* Set the height of the box */
+    top: -10cm;
+    right: 48cm;  
+  }
+  .item9{
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+  }
+  .Neon{
+    position: absolute;
+    top: 0;
+    bottom: 4cm;
+    left: 0;
+    right: 2cm;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(92,144,255,0.5);
+    text-align: center;
+    color: #fff;
+    line-height: 36.5px;
+    font-weight: 700px;
+    font-size: 25px;
+    box-shadow: 0 0 10px 5px rgba(92, 144, 255, 0.5);
+  }
+  
+    .levelne {
+      position: absolute;
+      top: 0;
+      bottom: 4cm;
+      left: 0;
+      right: 2cm;
+      margin: auto;
+      border-radius: 50%;
+      border: 1px solid #f8f4f45b;
+      box-shadow: 0 0 10px 5px #f8f4f45b;
+    }
+    
+      .levelne.onene {
+        width: 100px;
+        height: 100px;
+        -webkit-animation: rotating 4s linear infinite;
+        -moz-animation: rotating 4s linear infinite;
+        -ms-animation: rotating 4s linear infinite;
+        -o-animation: rotating 4s linear infinite;
+        animation: rotating 4s linear infinite;
+      }
+      
+      .levelne.twone {
+        width: 150px;
+        height: 150px;
+        -webkit-animation: rotating 6s linear infinite;
+        -moz-animation: rotating 6s linear infinite;
+        -ms-animation: rotating 6s linear infinite;
+        -o-animation: rotating 6s linear infinite;
+        animation: rotating 6s linear infinite;
+      }
+      
+      .electronne {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        text-align: center;
+        color: #fff;
+        line-height: 17px;
+        font-weight: 400;
+        font-size: 15px;
+        box-shadow: 0 0 10px 5px #e555c7;
+      }
+      
+        .levelne.onene .electronne {
+          background: #e555c7;
+          -webkit-animation: rotatingBack 4s linear infinite;
+          -moz-animation: rotatingBack 4s linear infinite;
+          -ms-animation: rotatingBack 4s linear infinite;
+          -o-animation: rotatingBack 4s linear infinite;
+          animation: rotatingBack 4s linear infinite;
+        }
+    
+          .levelne.onene .electronne:nth-of-type(1) { /*TOP*/
+            margin-top: -10px; /*-(20px(electronDim)/2)*/
+            margin-left: 40px; /*100px(levelDim)/2-20px(electronDim)/2*/
+          }
+          
+          .levelne.onene .electronne:nth-of-type(2) { /*BOTTOM*/
+            margin-top: 90px;  /*100px(levelDim)-(20px(electronDim)/2)*/
+            margin-left: 40px; /*100px(levelDim)/2-20px(electronDim)/2*/
+          }
+          
+        
+        .levelne.twone .electronne {
+          background: #e555c7;
+          -webkit-animation: rotatingBack 8s linear infinite;
+          -moz-animation: rotatingBack 8s linear infinite;
+          -ms-animation: rotatingBack 8s linear infinite;
+          -o-animation: rotatingBack 8s linear infinite;
+          animation: rotatingBack 8s linear infinite;
+        }
+        
+          .levelne.twone .electronne:nth-of-type(1) { /*TOP*/
+            margin-top: -10px; /*-(20px(electronDim)/2)*/
+            margin-left: 65px; /*150px(levelDim)/2-20px(electronDim)/2*/
+          }
+          .levelne.twone .electronne:nth-of-type(2) { /*TOP*/
+            margin-top: 140px; /*-(20px(electronDim)/2)*/
+            margin-left: 65px; /*150px(levelDim)/2-20px(electronDim)/2*/
+          }
+          .levelne.twone .electronne:nth-of-type(3) { /*LEFT*/
+            margin-top: 65px;   /*150px(levelDim)/2-20px(electronDim)/2*/
+            margin-left: -10px; /*-(20px(electronDim)/2)*/
+          }
+          
+          .levelne.twone .electronne:nth-of-type(4) { /*RIGHT*/
+            margin-top: 65px;   /*150px(levelDim)/2-20px(electronDim)/2*/
+            margin-left: 140px; /*150px(levelDim)-(20px(electronDim)/2)*/
+          }
+
+          .levelne.twone .electronne:nth-of-type(5) { /*RIGHT*/
+            margin-top: 90px;   /*150px(levelDim)/2-20px(electronDim)/2*/
+            margin-left: 140px; /*150px(levelDim)-(20px(electronDim)/2)*/
+          }
+
+          .levelne.twone .electronne:nth-of-type(6) { /*RIGHT*/
+            margin-top: 90px;   /*150px(levelDim)/2-20px(electronDim)/2*/
+            margin-left:-10px; /*150px(levelDim)-(20px(electronDim)/2)*/
+          }
+
+          .levelne.twone .electronne:nth-of-type(7) { /*RIGHT*/
+            margin-top: 140px;   /*150px(levelDim)/2-20px(electronDim)/2*/
+            margin-left:90px; /*150px(levelDim)-(20px(electronDim)/2)*/
+          }
+
+          .levelne.twone .electronne:nth-of-type(8) { /*RIGHT*/
+            margin-top: -10px;   /*150px(levelDim)/2-20px(electronDim)/2*/
+            margin-left:90px; /*150px(levelDim)-(20px(electronDim)/2)*/
+          }
+    
+  
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes rotatingBack /* Safari and Chrome */ {
+    from {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    to {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes rotatingBack {
+    from {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    to {  
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  .tag9{
+    text-align: center;
+    color: #e555c7;
+    text-shadow:  #e555c7;
+    font-size: 50pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70pt;
+  }
+ 

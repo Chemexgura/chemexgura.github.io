@@ -1,0 +1,195 @@
+/* Default styles */
+body {
+  background-image: url("bodybg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Resetting default browser styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Styling the navigation bar */
+.navbar {
+background-color: transparent; /* Background color */
+overflow: hidden;
+padding-left: 18cm;
+}
+
+/* Links inside the navigation bar */
+.navbar a {
+float: left; /* Float the links to the left */
+display: block; /* Make each link a block-level element */
+color: #fff; /* Text color */
+text-align: center; /* Center-align text */
+padding: 14px 40px; /* Padding (top and bottom) 14px, Padding (left and right) 20px */
+text-decoration: none; /* Remove underline from links */
+}
+
+/* Change background color of navbar on hover */
+.navbar a:hover {
+background-color: #f5f5f5;
+color: #333;
+border-radius: 10px;
+box-shadow: #f5f5f5;
+}
+
+/* Responsive navigation bar */
+@media screen and (max-width: 768px) {
+.navbar {
+  padding-left: 1rem; /* Adjust padding for mobile */
+}
+
+.navbar a {
+  float: none; /* Remove float to stack links vertically */
+  display: block; /* Make links stack vertically */
+  text-align: left; /* Align text to the left */
+}
+}
+
+/* Main content styles */
+.main {
+padding-left: 15cm;
+padding-top: 2cm;
+}
+
+.logo {
+padding-bottom: 0.2cm;
+}
+
+.girl {
+padding-top: 1cm;
+padding-left: 6cm;
+}
+
+.par {
+text-align: center;
+padding-left: 8cm;
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .15em solid orange; /* The typewriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .10em; /* Adjust as needed */
+animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: transparent; }
+}
+
+/* CSS for buttons */
+.but1 {
+bottom: 3cm;
+left: 1cm;
+padding: 0.6em 2em;
+border: none;
+outline: none;
+color: rgb(255, 255, 255);
+background: #eee9e9;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+font-size: medium;
+}
+
+.but1:before {
+content: "";
+background: linear-gradient(
+  45deg,
+  #ff0000,
+  #ff7300,
+  #fffb00,
+  #48ff00,
+  #00ffd5,
+  #002bff,
+  #7a00ff,
+  #ff00c8,
+  #ff0000
+);
+position: absolute;
+top: -2px;
+left: -2px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+-webkit-filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing-button-85 20s linear infinite;
+transition: opacity 0.3s ease-in-out;
+border-radius: 10px;
+}
+
+.but1:after {
+z-index: -1;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: #222;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+0% {
+  background-position: 0 0;
+}
+50% {
+  background-position: 400% 0;
+}
+100% {
+  background-position: 0 0;
+}
+}
+
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255); /* Semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top */
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Apply rotation animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide the loading overlay when content is loaded */
+.loaded #loading-overlay {
+  display: none;
+}
+
